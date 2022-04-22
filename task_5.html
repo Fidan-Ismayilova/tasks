@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task 5</title>
+</head>
+<body>
+    <script>
+        function something(arr, n){
+            for(var i=0; i<arr.length; i++){
+            for (j = (i + 1); j < arr.length; j++) {
+                if (arr[i] + arr[j] == n) {
+                    console.log("these numbers are " + arr[i] + ", " + arr[j]);
+                    }
+                }
+            }
+        }
+
+    console.log(something([1,2,3,4], 3));
+    </script>
+</body>
+</html>
