@@ -9,17 +9,16 @@
 <body>
     <script>
 
-        function missingInteger(arr){
-        let arr = [];
-        let missing = [];
-            for (var i = 1; i <= 100; i++) {
-                if (arr.indexOf(i) == -1) {
-                 missing.push(i);
-                }        
+            function missing(arr, n) {
+            var missingElement = [];
+            for (var i = 1; i <= n; i++) {
+                if (!arr.includes(i)) {
+                missingElement.push(i);
+                }
             }
-            console.log(missing);
-        }
-       
+            return missingElement;
+            }
+            console.log(missing([1, 2, 3, 4], 5));
     </script>
 </body>
 </html>
